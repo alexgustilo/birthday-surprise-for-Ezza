@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>For Ezza 💜</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- =====================================================
+       BACKGROUND
+  ====================================================== -->
+
+  <div class="background">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="stars"></div>
+  </div>
+
+
+  <!-- =====================================================
+       SCREEN 1 — GIFT
+  ====================================================== -->
+
+  <section id="intro" class="screen active">
+
+    <div class="intro-content">
+
+      <p class="small-text">
+        ✨ A little surprise for you...
+      </p>
+
+      <h1 class="intro-title">
+        Someone prepared
+        <span>something special.</span>
+      </h1>
+
+      <p class="intro-description">
+        Take a moment... then open your gift.
+      </p>
+
+
+      <!-- GIFT -->
+
+      <button
+        id="giftButton"
+        class="gift-wrapper"
+        aria-label="Open birthday gift"
+      >
+
+        <div class="sparkle sparkle-1">✦</div>
+        <div class="sparkle sparkle-2">✧</div>
+        <div class="sparkle sparkle-3">✦</div>
+        <div class="sparkle sparkle-4">✧</div>
+
+
+        <div id="gift" class="gift">
+
+          <!-- LID -->
+
+          <div class="gift-lid">
+
+            <div class="ribbon vertical"></div>
+            <div class="ribbon horizontal"></div>
+
+            <div class="bow">
+              <span></span>
+              <span></span>
+            </div>
+
+          </div>
+
+
+          <!-- BOX -->
+
+          <div class="gift-box">
+
+            <div class="ribbon vertical"></div>
+
+          </div>
+
+        </div>
+
+
+        <span class="gift-label">
+          🎁 Tap to open
+        </span>
+
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       SCREEN 2 — WELCOME
+  ====================================================== -->
+
+  <section id="welcome" class="screen">
+
+    <div class="content-card welcome-card">
+
+      <div class="floating-heart">
+        💜
+      </div>
+
+      <p class="eyebrow">
+        A message for someone special
+      </p>
+
+      <h2>
+        Hey, <span>Ezza.</span>
+      </h2>
+
+      <div class="animated-line"></div>
+
+      <p class="message">
+        Today isn't just another day.
+        <br /><br />
+
+        It's a little reminder that
+        <strong>
+          you are someone worth celebrating.
+        </strong>
+      </p>
+
+
+      <button
+        id="letterButton"
+        class="main-button"
+      >
+        Read your letter
+        <span>→</span>
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       SCREEN 3 — LETTER
+  ====================================================== -->
+
+  <section id="letter" class="screen">
+
+    <div class="letter-container">
+
+      <div class="envelope-icon">
+        💌
+      </div>
+
+      <p class="eyebrow">
+        A little letter
+      </p>
+
+
+      <div class="letter-paper">
+
+        <div class="paper-shine"></div>
+
+
+        <h2>
+          Dear Ezza,
+        </h2>
+
+
+        <div class="letter-text">
+
+          <p>
+            Happy Birthday! 🎂
+          </p>
+
+          <p>
+            I hope this little surprise makes you smile,
+            even just for a moment.
+          </p>
+
+          <p>
+            Life can get busy, and sometimes we forget
+            to stop and appreciate the people around us.
+            So today, I just want you to know that
+            you are appreciated.
+          </p>
+
+          <p>
+            May this new chapter bring you more happiness,
+            more unforgettable memories, and more reasons
+            to smile.
+          </p>
+
+          <p>
+            Keep being the person that you are,
+            and never forget how special you are
+            to the people who care about you.
+          </p>
+
+          <p class="final-line">
+            Enjoy your day. You deserve it. 💜
+          </p>
+
+        </div>
+
+
+        <div class="signature">
+
+          <span>
+            With warm wishes,
+          </span>
+
+          <strong>
+            From Error Boys 💜
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <button
+        id="memoryButton"
+        class="main-button"
+      >
+        See your memories
+        <span>→</span>
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       SCREEN 4 — MEMORIES
+  ====================================================== -->
+
+  <section id="memories" class="screen">
+
+    <div class="memories-container">
+
+      <p class="eyebrow">
+        Little memories
+      </p>
+
+      <h2 class="section-title">
+        Moments worth remembering 📸
+      </h2>
+
+      <p class="section-description">
+        A few little moments saved just for you.
+      </p>
+
+
+      <!-- MUSIC -->
+
+      <div class="music-player">
+
+        <div class="music-icon">
+          🎵
+        </div>
+
+        <div class="music-info">
+
+          <strong>
+            A little song for you
+          </strong>
+
+          <span>
+            Press play and enjoy 💜
+          </span>
+
+        </div>
+
+        <button
+          id="musicButton"
+          class="music-button"
+          aria-label="Play music"
+        >
+          ▶
+        </button>
+
+      </div>
+
+
+      <audio
+        id="birthdayMusic"
+        src="music/birthday-song.mp3"
+        loop
+      ></audio>
+
+
+
+      <!-- PHOTO GALLERY -->
+
+      <div class="photo-grid">
+
+
+        <button
+          class="photo-card photo-1"
+          data-image="images/ezza1.jpg"
+          data-caption="A beautiful memory 💜"
+        >
+
+          <img
+            src="images/ezza1.jpg"
+            alt="Ezza memory 1"
+          />
+
+          <div class="photo-overlay">
+            <span>✦</span>
+          </div>
+
+        </button>
+
+
+
+        <button
+          class="photo-card photo-2"
+          data-image="images/ezza2.jpg"
+          data-caption="Another little memory ✨"
+        >
+
+          <img
+            src="images/ezza2.jpg"
+            alt="Ezza memory 2"
+          />
+
+          <div class="photo-overlay">
+            <span>✦</span>
+          </div>
+
+        </button>
+
+
+
+        <button
+          class="photo-card photo-3"
+          data-image="images/ezza3.jpg"
+          data-caption="A moment worth keeping 💜"
+        >
+
+          <img
+            src="images/ezza3.jpg"
+            alt="Ezza memory 3"
+          />
+
+          <div class="photo-overlay">
+            <span>✦</span>
+          </div>
+
+        </button>
+
+
+
+        <button
+          class="photo-card photo-4"
+          data-image="images/ezza4.jpg"
+          data-caption="One more memory ✨"
+        >
+
+          <img
+            src="images/ezza4.jpg"
+            alt="Ezza memory 4"
+          />
+
+          <div class="photo-overlay">
+            <span>✦</span>
+          </div>
+
+        </button>
+
+
+
+        <button
+          class="photo-card photo-5"
+          data-image="images/ezza5.jpg"
+          data-caption="And one last one 💜"
+        >
+
+          <img
+            src="images/ezza5.jpg"
+            alt="Ezza memory 5"
+          />
+
+          <div class="photo-overlay">
+            <span>✦</span>
+          </div>
+
+        </button>
+
+      </div>
+
+
+
+      <button
+        id="finalButton"
+        class="main-button final-button"
+      >
+        One last surprise
+        <span>→</span>
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       PHOTO MODAL
+  ====================================================== -->
+
+  <div
+    id="photoModal"
+    class="photo-modal"
+  >
+
+    <button
+      id="closeModal"
+      class="close-modal"
+      aria-label="Close photo"
+    >
+      ×
+    </button>
+
+    <div class="modal-content">
+
+      <img
+        id="modalImage"
+        src=""
+        alt="Memory"
+      />
+
+      <p id="modalCaption"></p>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================================================
+       SCREEN 5 — FINAL
+  ====================================================== -->
+
+  <section id="final" class="screen">
+
+    <div class="final-container">
+
+      <div class="final-stars">
+        ✦ ✧ ✦ ✧ ✦
+      </div>
+
+
+      <div class="birthday-emoji">
+        🎂
+      </div>
+
+
+      <p class="final-small">
+        And finally...
+      </p>
+
+
+      <h1 class="birthday-title">
+
+        Happy Birthday,
+
+        <span>
+          Ezza!
+        </span>
+
+      </h1>
+
+
+      <div class="heart-line">
+        💜 💜 💜
+      </div>
+
+
+      <p class="final-message">
+        May your day be filled with happiness,
+        laughter, beautiful memories,
+        and people who genuinely care about you.
+      </p>
+
+
+      <div class="final-signature">
+
+        <span>
+          Made with a little bit of code
+        </span>
+
+        <strong>
+          From Error Boys 💜
+        </strong>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- SCRIPT -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
